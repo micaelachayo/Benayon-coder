@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: stayTrueDemo;
+  src: url(../fonts/StaytrueDemo-Italic.otf);
+}
+
+/* estilo cabecera */
+.header {
+  background-color: rgb(218, 207, 230);
+}
+
+.header__contenedorTitulo__titulo {
+  font-family: stayTrueDemo;
+  color: rgb(96, 178, 192);
+}
+
+/* nav principal */
+nav {
+  background-color: rgb(162, 194, 196);
+}
+.boton {
+  background-color: rgb(162, 194, 196);
+}
+.botonLink:hover {
+  background-color: rgb(215, 249, 250);
+}
+
+.linkNenes button {
+  border-top-right-radius: 90px;
+}
+.bebes button {
+  border-top-left-radius: 90px;
+}
+.nav-link:hover {
+  color: rgb(215, 249, 250);
+}
+
+/* estilos main principal */
+.mainPrincipal {
+  background-color: white;
+}
+.mainPrincipal  section{
+  background-color: rgb(245, 231, 213);
+
+}
+/* footer */
+.footer {
+  background-color: rgb(218, 207, 230);
+}
+
+/* bebes */
+.mainPages {
+  background-color: rgb(245, 231, 213);
+}
+.card {
+  width: 17rem;
+}
+
+.colorBotones button {
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.yellow {
+  background-color: yellow;
+}
+.white {
+  background-color: rgb(243, 226, 203);
+}
+.blue {
+  background-color: rgb(0, 140, 255);
+}
+.black {
+  background-color: black;
+}
+.orange {
+  background-color: orange;
+}
+.green {
+  background-color: green;
+}
+.brown {
+  background-color: brown;
+}
+.red {
+  background-color: red;
+}
+.grey {
+  background-color: grey;
+}
+/* media quieries */
+@media (min-width: 360px) and (max-width: 705px) {
+  .img__header {
+    width: 22.5rem;
+  }
+  .imgNinas {
+    height: min-content;
+  }
+  .parrafo-contacto {
+    display: none;
+  }
+  .inputBuscador {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .cuerpoHumano {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .img__header {
+    width: 30rem;
+  }
+  .imgNinas {
+    height: min-content;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1251px) {
+  .img__header {
+    width: 35rem;
+  }
+  .imgNinas {
+    height: min-content;
+  }
+}
