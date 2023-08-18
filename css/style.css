@@ -1,107 +1,247 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 @font-face {
   font-family: stayTrueDemo;
   src: url(../fonts/StaytrueDemo-Italic.otf);
 }
-
-/* estilo cabecera */
-.header {
-  background-color: rgb(218, 207, 230);
+header {
+  background-color: rgba(221, 199, 205, 0.918);
 }
-
-.header__contenedorTitulo__titulo {
+header div h1 {
+  background: linear-gradient(to bottom, rgb(79, 159, 173) 40%, rgb(215, 249, 250));
+  -webkit-background-clip: text;
+  color: transparent;
   font-family: stayTrueDemo;
-  color: rgb(96, 178, 192);
 }
-
-/* nav principal */
-nav {
-  background-color: rgb(162, 194, 196);
+header nav {
+  background-color: rgb(164, 200, 206);
 }
-.boton {
-  background-color: rgb(162, 194, 196);
-}
-.botonLink:hover {
-  background-color: rgb(215, 249, 250);
-}
-
-.linkNenes button {
-  border-top-right-radius: 90px;
-}
-.bebes button {
+header nav li .bebes button {
   border-top-left-radius: 90px;
 }
-.nav-link:hover {
-  color: rgb(215, 249, 250);
+header nav li .nenes button {
+  border-top-right-radius: 90px;
+}
+header nav .boton {
+  background-color: rgb(164, 200, 206);
+}
+header nav .boton:hover {
+  background: linear-gradient(to bottom, rgb(79, 159, 173) 40%, rgb(215, 249, 250));
+}
+header nav .nav-link:hover {
+  color: rgb(44, 44, 141);
 }
 
-/* estilos main principal */
-.mainPrincipal {
-  background-color: white;
+.oferta {
+  background: linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px) 64px 64px, linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px, transparent 91px, rgba(221, 199, 205, 0.918) 91px, rgba(221, 199, 205, 0.918) 135px, transparent 135px), linear-gradient(-45deg, rgb(164, 200, 206) 23px, transparent 23px, transparent 68px, rgb(164, 200, 206) 68px, rgb(164, 200, 206) 113px, transparent 113px, transparent 158px, rgb(164, 200, 206) 158px);
+  background-color: #e1ebbd;
+  background-size: 128px 128px;
 }
-.mainPrincipal  section{
-  background-color: rgb(245, 231, 213);
+.oferta p {
+  animation-duration: 10s;
+  animation-name: slidein;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+  color: rgb(190, 7, 7);
+}
 
+@keyframes slidein {
+  from {
+    transform: translateX(20%);
+    width: 50%;
+  }
+  to {
+    transform: translateX(100%);
+    width: 50%;
+  }
 }
-/* footer */
-.footer {
-  background-color: rgb(218, 207, 230);
+main {
+  background-color: rgb(243, 237, 237);
+}
+main .boton {
+  background-color: rgb(164, 200, 206);
+}
+main .boton:hover {
+  background-color: rgb(173, 195, 201);
+}
+main .cardPrincipal {
+  transition: 1s;
+  object-fit: cover;
+  transition: 2s;
+}
+main .cardPrincipal:hover {
+  transform: scale(0.9);
+}
+main .filtro button:hover {
+  transform: rotate(12deg);
 }
 
-/* bebes */
-.mainPages {
-  background-color: rgb(245, 231, 213);
-}
-.card {
+.card-1 {
   width: 17rem;
 }
+.card-1 img {
+  transition: 1s;
+  object-fit: cover;
+}
+.card-1 img:hover {
+  transform: scale(1.2);
+}
 
-.colorBotones button {
+.card-2 {
+  width: 17rem;
+}
+.card-2 img {
+  transition: 1s;
+  object-fit: cover;
+}
+.card-2 img:hover {
+  transform: scale(1.2);
+}
+
+.card-3 {
+  width: 17rem;
+}
+.card-3 img {
+  transition: 1s;
+  object-fit: cover;
+}
+.card-3 img:hover {
+  transform: scale(1.2);
+}
+
+.card-4 {
+  width: 17rem;
+}
+.card-4 img {
+  transition: 1s;
+  object-fit: cover;
+}
+.card-4 img:hover {
+  transform: scale(1.2);
+}
+
+.card-5 {
+  width: 17rem;
+}
+.card-5 img {
+  transition: 1s;
+  object-fit: cover;
+}
+.card-5 img:hover {
+  transform: scale(1.2);
+}
+
+.card-6 {
+  width: 17rem;
+}
+.card-6 img {
+  transition: 1s;
+  object-fit: cover;
+}
+.card-6 img:hover {
+  transform: scale(1.2);
+}
+
+.card-7 {
+  width: 17rem;
+}
+.card-7 img {
+  transition: 1s;
+  object-fit: cover;
+}
+.card-7 img:hover {
+  transform: scale(1.2);
+}
+
+.card-8 {
+  width: 17rem;
+}
+.card-8 img {
+  transition: 1s;
+  object-fit: cover;
+}
+.card-8 img:hover {
+  transform: scale(1.2);
+}
+
+.blue {
+  background-color: rgb(0, 140, 255);
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.white {
+  background-color: rgb(243, 226, 203);
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.red {
+  background-color: red;
   padding: 1rem;
   border-radius: 100%;
 }
 
 .pink {
   background-color: pink;
+  padding: 1rem;
+  border-radius: 100%;
 }
 
 .yellow {
   background-color: yellow;
+  padding: 1rem;
+  border-radius: 100%;
 }
-.white {
-  background-color: rgb(243, 226, 203);
-}
-.blue {
-  background-color: rgb(0, 140, 255);
-}
+
 .black {
-  background-color: black;
+  background-color: rgba(31, 29, 29, 0.925);
+  padding: 1rem;
+  border-radius: 100%;
 }
+
 .orange {
   background-color: orange;
+  padding: 1rem;
+  border-radius: 100%;
 }
+
 .green {
   background-color: green;
+  padding: 1rem;
+  border-radius: 100%;
 }
+
 .brown {
   background-color: brown;
+  padding: 1rem;
+  border-radius: 100%;
 }
-.red {
-  background-color: red;
-}
+
 .grey {
   background-color: grey;
+  padding: 1rem;
+  border-radius: 100%;
 }
-/* media quieries */
+
+footer {
+  background-color: rgba(221, 199, 205, 0.918);
+}
+footer img {
+  transition: 1s;
+  object-fit: cover;
+}
+footer img:hover {
+  transform: scale(1.2);
+}
+
 @media (min-width: 360px) and (max-width: 705px) {
   .img__header {
     width: 22.5rem;
   }
-  .imgNinas {
+  .imgPrincipal {
     height: min-content;
+    width: 95%;
   }
   .parrafo-contacto {
     display: none;
@@ -119,15 +259,19 @@ nav {
   .img__header {
     width: 30rem;
   }
-  .imgNinas {
+  .imgPrincipal {
     height: min-content;
+    width: 95%;
   }
 }
 @media (min-width: 1201px) and (max-width: 1251px) {
   .img__header {
     width: 35rem;
   }
-  .imgNinas {
+  .imgPrincipal {
     height: min-content;
+    width: 95%;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+@import "../modulos/variables";
+@import "../modulos/mapas";
+
+header {
+  background-color: map-get($colorPaleta, "headerFooter" );
+  div {
+    h1 {
+     background: $bg__gradiante;
+      -webkit-background-clip: text; 
+      color: transparent;
+      font-family: $fontTitulo;
+    }
+  }
+  nav {
+    background-color: map-get($colorPaleta, "nav" );
+    li {
+      .bebes {
+        button {
+          border-top-left-radius: $borderRadius;
+        }
+      }
+      .nenes {
+        button {
+          border-top-right-radius: $borderRadius;
+        }
+      }
+    }
+    .boton {
+      background-color: map-get($colorPaleta, "nav");
+      &:hover {
+        background:$bg__gradiante;
+  
+      }
+    }
+    .nav-link {
+      &:hover {
+        color: map-get($colorPaleta , "hoverLink" )
+      }
+    }
+  }
+}

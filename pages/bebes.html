@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../assets/iconos/favicon (1).ico" />
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Bebes</title>
+    <title>Bebés</title>
   </head>
   <body>
+    <!-- Header -->
     <header class="container-fluid header">
       <div class="row">
         <div
@@ -44,50 +46,55 @@
           </h1>
         </div>
 
-        <div class="col-2 col-md-3 text-center mt-3 header__containbuscador">
+        <div class="col-2 col-md-3 text-center mt-4 header__containbuscador">
           <form class="d-flex" role="search">
             <input
-              class="inputBuscador form-control me-2 w-md-100"
+              class="form-control me-2 w-50 shadow inputBuscador"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <img
-              class=" me-5 header__img"
-              src="../assets/iconos/busqueda-de-lupa.png"
-              alt="buscador"
-              width="28"
-              height="28"
-            />
+         
+
+          <img
+            class="me-5 header__img"
+            src="../assets/iconos/busqueda-de-lupa.png"
+            alt="buscador"
+            width="28"
+            height="28"
+          />
           </form>
         </div>
       </div>
+
+      <!-- Navbar -->
       <div class="row">
         <nav class="navbar navbar-expand-md align-items-center">
-            <div class="col-4 ps-md-3">
-              <a class="inicio" href="../index.html"
-                ><button class=" py-1 px-3 px-sm-4 rounded-pill botonLink boton">
-                  Inicio
-                </button></a
-              >
-            </div>
+          <div class="col-4 ps-md-3">
+            <a class="inicio" href="../index.html"
+              ><button class="py-1 px-3 px-sm-4 rounded-pill botonLink boton">
+                Inicio
+              </button></a
+            >
+          </div>
           <div class="col-4 justify-content-center list-unstyled d-flex">
             <li>
-              <a href="../pages/nenas.html"><button class=" py-1 px-3 px-sm-4 rounded-pill botonLink boton">
+              <a href="../pages/nenas.html"
+                ><button class="py-1 px-3 px-sm-4 rounded-pill botonLink boton">
                   Nenas
-                </button></a>
+                </button></a
+              >
             </li>
             <li>
-              <a href="../pages/nenes.html"><button class=" py-1 px-3 px-sm-4 rounded-pill botonLink boton">
-                 Nenes
-                </button></a>
+              <a href="../pages/nenes.html"
+                ><button class="py-1 px-3 px-sm-4 rounded-pill botonLink boton">
+                  Nenes
+                </button></a
+              >
             </li>
-           
-      
           </div>
-  
 
-          <div class="col-4 col-sm-4 text-start pt-2  pt-sm-0  column-gap-5 px-5">
+          <div class="col-4 col-sm-4 text-start pt-2 pt-sm-0 column-gap-5 px-5">
             <button
               class="navbar-toggler"
               type="button"
@@ -100,10 +107,10 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div
-              class=" justify-content-center collapse navbar-collapse"
+              class="justify-content-center collapse navbar-collapse"
               id="navbarNav"
             >
-              <ul class=" d-flex flex-column navbar-nav">
+              <ul class="d-flex flex-column navbar-nav">
                 <li class="nav-item">
                   <a
                     class="nav-link"
@@ -121,30 +128,193 @@
         </nav>
       </div>
     </header>
+    <aside >
+      <div class="oferta">
+        <p class="oferta__p text-center fw-bold "> SALE 2X1 EN TODAS LAS PRENDAS!</p>
+      </div>
+  </aside>
 
     <main class="mainPages container-fluid">
+      <!-- Filtros -->
       <section class="row row-gap-3 p-3">
         <div class="col-6 d-flex align-items-center dropdown">
-          <button
-            class="btn btn-light p-3 boton"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          ></button> 
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#">Color </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">Talle</a>
-            </li>
-            <li><a class="dropdown-item" href="#">Categorias</a></li>
-          </ul>
+          <div class="filtro d-flex">
+            <button
+              class="p-3 boton botonFiltro"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling"
+            ></button>
+            <div>
+              <p class="fw-medium text-decoration-underline">Filtros</p>
+            </div>
+          </div>
 
-          <p class="filtro">filtro</p>
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+            tabindex="-1"
+            id="offcanvasScrolling"
+            aria-labelledby="offcanvasScrollingLabel"
+          >
+            <div class="dropdown mt-3 mx-5">
+              <section>
+                <div class="offcanvas-header">
+                  <h2 class="offcanvas-title" id="offcanvasScrollingLabel">
+                    Filtros
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <div class="offcanvas-body">
+                  <div class="text-center">
+                    <h3 class="fs-4">Colores</h3>
+                  </div>
+                  <form class="filtroColores d-flex justify-content-between">
+                    <div>
+                      <div>
+                        <input type="checkbox" name="negro" id="negro" />
+                        <label for="negro">Negro</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" name="azul" id="azul" />
+                        <label for="azul">Azul</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" name="blanco" id="blanco" />
+                        <label for="blanco">Blanco</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" name="Rosa" id="Rosa" />
+                        <label for="Rosa">Rosa</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="Verde" id="Verde" />
+                        <label for="Verde">Verde</label>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div>
+                        <input type="checkbox" name="red" id="rojo" />
+                        <label for="rojo">Rojo</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" name="Amarillo" id="Amarillo" />
+                        <label for="Amarillo">Amarillo</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" name="Rosa" id="Rosa" />
+                        <label for="Rosa">Rosa</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" name="Naranja" id="Naranja" />
+                        <label for="Naranja">Naranja</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" name="Marron" id="Marron" />
+                        <label for="Marron">Marrón</label>
+                      </div>
+                    </div>
+                  </form>
+
+                  <div class="mt-3 text-center">
+                    <h3 class="fs-4">Talles</h3>
+                  </div>
+
+                  <section
+                    class="mt-2 filtroTalles d-flex justify-content-between"
+                  >
+                    <section class="filroTalles__bebes">
+                      <div>
+                        <h4 class="fs-5">Bebés</h4>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" name="3" id="3" />
+                        <label for="3">3 meses</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" name="6" id="6" />
+                        <label for="6">6 meses</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="9" id="9" />
+                        <label for="9">9 meses</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="12" id="12" />
+                        <label for="12">12 meses</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="18" id="18" />
+                        <label for="18">18 meses</label>
+                      </div>
+                    </section>
+
+                    <div class="filtroTalles__ninos">
+                      <div>
+                        <h4 class="fs-5">Niños</h4>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" name="t2" id="t2" />
+                        <label for="t2">Talle 2</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" name="t4" id="t4" />
+                        <label for="t4"> Talle 4</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="t6" id="t6" />
+                        <label for="t6">Talle 6</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="t8" id="t8" />
+                        <label for="t8">Talle 8</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="t10" id="t10" />
+                        <label for="t10">Talle 10</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="t12" id="t12" />
+                        <label for="t12">Talle 12</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="t14" id="t14" />
+                        <label for="t14">Talle 14</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="t16" id="t16" />
+                        <label for="t16">Talle 16</label>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </section>
+            </div>
+          </div>
         </div>
 
-        <div class="col-6 d-flex justify-content-end dropdown">
-          <p>ordenar de:</p>
+        <div class="col-6 d-flex justify-content-end dropdown pe-5">
+          <p class="fw-medium text-decoration-underline">Ordenar de:</p>
           <button
             class="btn btn-light dropdown-toggle"
             type="button"
@@ -165,8 +335,13 @@
         </div>
       </section>
 
+      <!-- Articulos -->
       <div class="row justify-content-center pb-5 row-gap-3 p-2">
-        <article class="card col-3 col-xl-3 me-2">
+        <article
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="card card-1 col-3 me-2"
+        >
           <div id="carouselUno" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -237,7 +412,11 @@
           </div>
         </article>
 
-        <article class="card col-3 col-xl-3 me-2">
+        <article
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="card card-2 col-3 me-2"
+        >
           <div id="carouselDos" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -307,7 +486,11 @@
           </div>
         </article>
 
-        <article class="card col-3 col-xl-3 me-2">
+        <article
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="card card-3 col-3 me-2"
+        >
           <div id="carouselTres" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -381,7 +564,11 @@
           </div>
         </article>
 
-        <article class="card col-3 col-xl-3 me-2">
+        <article
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="card card-4 col-3 me-2"
+        >
           <div id="carouselCuatro" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -450,7 +637,12 @@
             <button class="btn grey"></button>
           </div>
         </article>
-        <article class="card col-3 me-2">
+
+        <article
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="card card-5 col-3 me-2"
+        >
           <div id="carouselCinco" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -524,7 +716,12 @@
             <button class="btn black"></button>
           </div>
         </article>
-        <article class="card col-3 me-2">
+
+        <article
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="card card-6 col-3 me-2"
+        >
           <div id="carouselSeis" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -595,14 +792,18 @@
           </div>
         </article>
 
-        <article class="card col-3 me-2">
+        <article
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="card card-7 col-3 me-2"
+        >
           <div id="carouselSiete" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
                   src="../assets/bebes/cod007-enterito.jpg"
                   class="d-block w-100"
-                  alt="c006"
+                  alt="c008"
                   height="272"
                 />
               </div>
@@ -610,7 +811,7 @@
                 <img
                   src="../assets/bebes/cod007-enterito.jpg"
                   class="d-block w-100"
-                  alt="c006"
+                  alt="c008"
                   height="272"
                 />
               </div>
@@ -618,7 +819,7 @@
                 <img
                   src="../assets/bebes/cod007-enterito.jpg"
                   class="d-block w-100"
-                  alt="c006  "
+                  alt="c008"
                   height="272"
                 />
               </div>
@@ -667,7 +868,12 @@
             <button class="btn blue"></button>
           </div>
         </article>
-        <article class="card col-3 me-2">
+
+        <article
+          data-aos="fade-up"
+          data-aos-duration="2500"
+          class="card card-8 col-3 me-2"
+        >
           <div id="carouselOcho" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -739,6 +945,7 @@
       </div>
     </main>
 
+    <!-- Aside -->
     <aside class="wsp">
       <a
         href="https://api.whatsapp.com/send/?phone=5491130340087"
@@ -752,6 +959,7 @@
       /></a>
     </aside>
 
+    <!-- Footer -->
     <footer class="position-fixed bottom-0 container-fluid footer">
       <div class="row ps-5">
         <div class="col-3 d-flex footer__boxFacebook">
@@ -807,5 +1015,9 @@
       </div>
     </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

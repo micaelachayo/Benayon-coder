@@ -1,0 +1,21 @@
+@import "../modulos/variables";
+@import "../modulos/mapas";
+@import "../modulos/mixin";
+
+@for $i from 1 through 8 {
+  .card-#{$i} {
+    width: $card-width;
+
+    img {
+      @include imagenes(1.2);
+    }
+  }
+}
+
+@each $color, $valor in $botonCard {
+  .#{$color} {
+    background-color: $valor;
+    padding: 1rem;
+    border-radius: 100%;
+  }
+}
