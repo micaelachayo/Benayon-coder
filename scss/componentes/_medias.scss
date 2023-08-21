@@ -1,29 +1,28 @@
-@import "../modulos/variables";
-@import "../modulos/mixin";
-@import "../modulos/mapas";
+@import "../global/variables";
+@import "../global/mixin";
+@import "../global/mapas";
 
 @media (min-width: 360px) and (max-width: 705px) {
   @include media("360-705");
+
   .parrafo-contacto {
     display: none;
   }
-  .inputBuscador {
+  .input-buscador {
     display: none;
-  
-    
   }
 }
 
 @media (max-width: 767px) {
-  .cuerpoHumano {
+  .cuerpo-humano {
     display: none;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-@include media("992-1200");
+  @include media("992-1200");
 }
 
-@media (min-width: 1201px) and (max-width: 1251px) {
-@include media("1201-1251");
+@media (min-width: 1201px) and (max-width: 1260px) {
+  @include media("1201-1260");
 }

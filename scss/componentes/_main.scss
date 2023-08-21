@@ -1,0 +1,34 @@
+@import "../global/mapas";
+@import "../global/mixin";
+
+main {
+  background-color: map-get($color-paleta, "main");
+
+  .boton {
+    background-color: map-get($color-paleta, "nav");
+    &:hover {
+      background-color: map-get($color-paleta, "hover");
+    }
+  }
+
+  .card-principal {
+    @include imagenes(0.9);
+    .img-principal {
+      filter: drop-shadow(10px 10px 10px grey);
+    }
+  }
+  .filtro {
+    button {
+      @include filter;
+      &:hover {
+        transform: rotate(12deg);
+      }
+    }
+  }
+  h2 {
+    color: $color-h;
+  }
+  h4 {
+    color: $color-h;
+  }
+}

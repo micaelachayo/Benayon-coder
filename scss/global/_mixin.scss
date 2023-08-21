@@ -2,12 +2,11 @@
 
 // Media quiery
 @mixin media($key) {
-  .img__header {
+  .img-principal {
     width: map-get($width-img, $key);
   }
-  .imgPrincipal {
+  .img-ninas {
     height: min-content;
-    width: 95%;
   }
 }
 
@@ -21,3 +20,6 @@
   }
 }
 
+@mixin filter{
+  filter: drop-shadow(1px 1px 1px gray);
+}

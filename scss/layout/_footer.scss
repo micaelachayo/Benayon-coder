@@ -1,9 +1,0 @@
-@import "../modulos/mapas";
-
-footer {
-  background-color: map-get($colorPaleta, "headerFooter");
-
-  img {
-    @include imagenes(1.2);
-  }
-}
