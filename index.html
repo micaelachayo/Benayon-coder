@@ -3,35 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="./assets/iconos/favicon (1).ico" />
+    <meta
+      name="description"
+      content="Descubre Dasa, la tienda online líder en moda infantil. Encuentra prendas de alta calidad, 
+      diseño único y precios accesibles para vestir a tus pequeños con estilo y comodidad, 
+      donde todo está en oferta 2x1. 
+      ¡Dasa es tu destino para vestir  a tus hijos con confianza y estilo!"
+    />
+    <meta name="keywords" content="moda, ropa, estilo, calidad" />
+    <link rel="shortcut icon" href="./assets/iconos/favicon.svg" />
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Dasa</title>
+    <title>Dasa Sitio oficial | Ropa infantil</title>
   </head>
   <body>
+    <!-- Header -->
     <header class="container-fluid header">
       <div class="row">
         <div
-          class="col-3 col-md-3 d-flex justify-content-center align-items-center header__contenedorIconos"
+          class="col-3 col-md-3 d-flex justify-content-center align-items-center header_iconos"
         >
           <img
-            class="header__img"
-            src="./assets/iconos/usuario.png"
+            class="header-img me-1"
+            src="./assets/iconos/user.svg"
             alt="usuario"
             width="28"
             height="28"
           />
           <img
-            class="header__img"
-            src="./assets/iconos/corazon.png"
+            class="header-img me-1"
+            src="./assets/iconos/corazon.svg"
             alt="likes"
             width="28"
             height="28"
           />
 
           <img
-            class="header__img"
+            class="header-img"
             src="./assets/iconos/carrito.svg"
             alt="carrito"
             width="28"
@@ -39,23 +48,25 @@
           />
         </div>
 
-        <div class="col-7 col-md-6 text-center header__contenedor">
-          <h1 class="animate__heartBeat display-3 pt-1 me-xxl-5 fw-bold text">
-            DASA
-          </h1>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          class="col-7 col-md-6 text-center header_contenedor"
+        >
+          <h1 class="display-3 pt-1 me-xxl-5 fw-bold text">DASA</h1>
         </div>
 
-        <div class="col-2 col-md-3 text-end mt-4 header__containerbuscador">
+        <div class="col-2 col-md-3 text-end mt-4 header_container_buscador">
           <form class="d-flex" role="search">
             <input
-              class="form-control me-2 w-50 shadow inputBuscador"
+              class="form-control me-2 w-50 shadow input_buscador"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
             <img
-              class="me-5 header__img"
-              src="./assets/iconos/busqueda-de-lupa.png"
+              class="me-5 header-img"
+              src="./assets/iconos/busqueda-de-lupa.svg"
               alt="buscador"
               width="28"
               height="28"
@@ -65,6 +76,7 @@
       </div>
 
       <div class="row">
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-md">
           <div class="col-12 col-sm-9 col-md-8 col-xxl-7 ulNav">
             <ul
@@ -87,6 +99,7 @@
               </li>
             </ul>
           </div>
+
           <div class="col-12 col-sm-3 col-md-4 col-xxl-5 column-gap-5 px-5">
             <button
               class="navbar-toggler"
@@ -99,6 +112,7 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
+
             <div
               class="justify-content-center collapse navbar-collapse"
               id="navbarNav"
@@ -106,14 +120,19 @@
               <ul class="d-flex flex-column navbar-nav">
                 <li class="nav-item">
                   <a
-                    class="nav-link"
+                    class="nav-link fs-6 fw-medium text-decoration-underline"
                     aria-current="page"
                     href="./pages/talles.html"
                     >Guia de talles</a
                   >
                 </li>
+
                 <li class="nav-item">
-                  <a class="nav-link" href="./pages/talles.html">Contacto</a>
+                  <a
+                    class="nav-link fs-6 fw-medium text-decoration-underline"
+                    href="./pages/talles.html"
+                    >Contacto</a
+                  >
                 </li>
               </ul>
             </div>
@@ -122,64 +141,59 @@
       </div>
     </header>
 
+    <!-- Aside oferta -->
     <aside>
       <div class="oferta">
-        <p class="oferta__p text-center fw-bold">
+        <p class="oferta-p text-center fw-bold">
           SALE 2X1 EN TODAS LAS PRENDAS!
         </p>
       </div>
     </aside>
-    <main class="container-fluid mainPrincipal">
-      <div class="row mt-3">
+
+    <!-- main -->
+    <main class="container-fluid main-principal">
+      <div class="row">
+        <!-- sector ninos -->
         <section
-          class="col-12 col-lg-6 d-flex flex-column align-items-center cardPrincipal"
+          class="col-12 col-lg-6 d-flex flex-column align-items-center card-principal"
         >
           <div>
-            <a
-              class="mainPagPrincipal__descripcion__a"
-              href="./pages/nenes.html"
-            >
+            <a href="./pages/nenes.html">
               <img
-                class="ps-2 imgPrincipal"
-                src="./assets/imgNinos.jpg"
-                alt="imgNinos"
+                class="ps-2 img-principal mb-1"
+                src="./assets/imgNinos.webp"
+                alt="img-ninos"
               />
             </a>
           </div>
+
           <div class="text-center">
-            <p class="descripcion__texto">
+            <p class="descripcion-texto">
               Todo lo que necesitas para tu hijo, lo encontrás aca.
             </p>
-            <a
-              class="mainPagPrincipal__descripcion__a"
-              href="./pages/nenes.html"
-            >
-              <button type="button" class="btn boton">Ver todo</button></a
-            >
+            <a href="./pages/nenes.html">
+              <button type="button" class="btn boton">Ver todo</button>
+            </a>
           </div>
         </section>
+
         <section
-          class="col-12 col-lg-6 d-flex flex-column align-items-center cardPrincipal"
+          class="col-12 col-lg-6 d-flex flex-column align-items-center card-principal"
         >
           <div>
-            <a
-              class="mainPagPrincipal__descripcion__a"
-              href="./pages/nenas.html"
-            >
+            <a href="./pages/nenas.html">
               <img
-                src="./assets/imgNinas.jpg"
-                class="imgPrincipal row-gap-5 p-2 pt-lg-0 ps-lg-0"
-                alt="imgNinas"
+                src="./assets/imgNinas.webp"
+                class="img-principal img-ninas mb-1 row-gap-5 p-2 pt-lg-0 ps-lg-0"
+                alt="img-ninas"
                 height="418"
               />
             </a>
           </div>
+
           <div class="text-center">
             <p>Conocé todas nuestras prendas de invierno para tu hija.</p>
-            <a
-              class="mainPagPrincipal__descripcion__a"
-              href="./pages/nenas.html"
-            >
+            <a href="./pages/nenas.html">
               <button type="button" class="btn boton">Ver todo</button></a
             >
           </div>
@@ -187,30 +201,26 @@
       </div>
 
       <div class="row">
+        <!-- sector bebes -->
         <section
-          class="col-12 d-flex flex-column align-items-center pb-5 cardPrincipal"
+          class="col-12 d-flex flex-column align-items-center pb-5 card-principal"
         >
           <div>
-            <a
-              class="mainPagPrincipal__descripcion__a"
-              href="./pages/bebes.html"
-            >
+            <a href="./pages/bebes.html">
               <img
-                src="./assets/imgBebe.jpg"
-                class="imgPrincipal row-gap-5 p-2"
-                alt="imgBebes"
+                src="./assets/imgBebe.webp"
+                class="img-principal row-gap-5 p-2 mb-1"
+                alt="img-bebes"
               />
             </a>
           </div>
+
           <div class="text-center">
             <p>
               Encontrá bodies, pantalones,remeras y muchoo más, haciendo click
               en el botón.
             </p>
-            <a
-              class="mainPagPrincipal__descripcion__a"
-              href="./pages/bebes.html"
-            >
+            <a href="./pages/bebes.html">
               <button type="button" class="btn boton">Ver todo</button></a
             >
           </div>
@@ -218,26 +228,28 @@
       </div>
     </main>
 
+    <!-- whatsapp aside -->
     <aside class="wsp">
       <a
         href="https://api.whatsapp.com/send/?phone=5491130340087"
         target="_blank"
         ><img
           class="position-fixed bottom-50 end-0 wsp__wsp"
-          src="./assets/iconos/wsp-.png"
+          src="./assets/iconos/whatsapp.svg"
           alt="wsp"
           width="48"
           height="48"
       /></a>
     </aside>
 
+    <!-- footer -->
+
     <footer class="position-fixed bottom-0 container-fluid footer">
       <div class="row ps-5">
-        <div class="col-3 d-flex footer__boxFacebook">
-          <a class="facebook-a" href="https://www.facebook.com" target="_blank"
+        <div class="col-3 d-flex">
+          <a href="https://www.facebook.com" target="_blank"
             ><img
-              class="footer__facebook"
-              src="./assets/iconos/facebook-.png"
+              src="./assets/iconos/facebook.svg"
               alt="facebook"
               width="28"
               height="28"
@@ -246,10 +258,9 @@
         </div>
 
         <div class="col-3 d-flex footer__boxGmail">
-          <a class="gmail-a" href="https://www.gmail.com" target="_blank">
+          <a href="https:/www.gmail.com" target="_blank">
             <img
-              class="footer__boxGmail__gmail"
-              src="./assets/iconos/gmail-.png"
+              src="./assets/iconos/gmail.svg"
               alt="gmail"
               width="28"
               height="28"
@@ -257,34 +268,33 @@
           <p class="parrafo-contacto">dasa@gmail.com</p>
         </div>
 
-        <div class="col-3 d-flex footer__boxInstagram">
-          <a href="https://www.instagram.com" target="_blank">
+        <div class="col-3 d-flex">
+          <a href="https:/www.instagram.com" target="_blank">
             <img
-              class="footer__boxInstagram__instagram"
-              src="./assets/iconos/instagram-.png"
+              src="./assets/iconos/instagram.svg"
               alt="dasaMail"
-              width="28"
-              height="28"
+              width="32"
+              height="32"
           /></a>
           <p class="parrafo-contacto">@dasa</p>
         </div>
 
-        <div class="col-3 d-flex footer__boxwsp">
+        <div class="col-3 d-flex">
           <a
             href="https://api.whatsapp.com/send/?phone=5491130340087"
             target="_blank"
           >
             <img
-              class="footer__boxwsp__wsp"
-              src="./assets/iconos/wsp-.png"
+              src="./assets/iconos/whatsapp.svg"
               alt="wsp"
-              width="28"
-              height="28"
+              width="32"
+              height="32"
           /></a>
           <p class="parrafo-contacto">+54 911 2444 4444</p>
         </div>
       </div>
     </footer>
+
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
