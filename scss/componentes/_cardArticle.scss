@@ -1,10 +1,11 @@
-@import "../modulos/variables";
-@import "../modulos/mapas";
-@import "../modulos/mixin";
+@import "../global/variables";
+@import "../global/mapas";
+@import "../global/mixin";
 
 @for $i from 1 through 8 {
   .card-#{$i} {
-    width: $card-width;
+    width: $card-width*2;
+    @include filter;
 
     img {
       @include imagenes(1.2);
@@ -12,7 +13,7 @@
   }
 }
 
-@each $color, $valor in $botonCard {
+@each $color, $valor in $boton-card {
   .#{$color} {
     background-color: $valor;
     padding: 1rem;
