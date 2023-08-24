@@ -6,7 +6,7 @@
     <meta
       name="description"
       content="Explora nuestra amplia selección de ropa de niños.
-      Desde prendas casuales para el día a día hasta outfits elegantes para ocasiones especiales, 
+      Desde prendas casuales para el día a día hasta outfits elegantes para ocasiones especiales,
       tenemos lo que necesitas para vestir a tus niños con estilo y comodidad."
     />
     <meta
@@ -24,9 +24,11 @@
     <!-- header -->
     <header class="container-fluid header">
       <div class="row">
-        <div
-          class="col-3 d-flex justify-content-center align-items-center "
+        <div      data-aos="fade-right"
+        data-aos-duration="1000"
+          class="col-3 d-flex justify-content-center align-items-center header__contenedorIconos"
         >
+          <!-- logo de la izq -->
           <img
             class="header-img me-1"
             src="../assets/iconos/user.svg"
@@ -51,26 +53,27 @@
           />
         </div>
 
+        <!-- titulo -->
         <div
           data-aos="fade-right"
           data-aos-duration="1000"
-          class="col-7 col-md-6 text-center "
+          class="col-7 col-md-6 text-center"
         >
-          <h1 class="display-3 pt-1 fw-bold">
-            Dasa boys
-          </h1>
+          <h1 class="display-3 pt-1 fw-bold">Dasa-Boys</h1>
         </div>
 
         <div class="col-2 col-md-3 text-center mt-4">
-          <form class="d-flex" role="search">
+          <form      data-aos="fade-right"
+          data-aos-duration="1000" class="d-flex" role="search">
             <input
               class="form-control me-2 w-50 shadow input-buscador"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
+
             <img
-              class="me-5 header-img"
+              class="me-5 pb-2 header-img"
               src="../assets/iconos/busqueda-de-lupa.svg"
               alt="buscador"
               width="28"
@@ -79,36 +82,47 @@
           </form>
         </div>
       </div>
+
+      <!-- Navbar -->
       <div class="row">
-        <!-- navbar -->
         <nav class="navbar navbar-expand-md align-items-center">
-          <div class="col-4 ps-md-3">
+          <div      data-aos="fade-right"
+          data-aos-duration="1000" class="col-4 ps-md-3">
             <a class="inicio" href="../index.html"
-              ><button class="py-1 px-3 px-sm-4 rounded-pill boton">
+              ><button class="py-1 px-sm-4 rounded-pill boton">
                 Inicio
-              </button>
-            </a>
+              </button></a
+            >
           </div>
 
-          <div class="col-4 justify-content-center list-unstyled d-flex">
+          <div      data-aos="fade-right"
+          data-aos-duration="1000" class="col-4 justify-content-center list-unstyled d-flex">
             <li>
               <a href="../pages/bebes.html"
-                ><button class="py-1 px-3 px-sm-4 rounded-pill boton">
+                ><button class="py-1 px-2 px-sm-4 rounded-pill boton">
                   Bebés
                 </button></a
               >
             </li>
-
             <li>
               <a href="../pages/nenas.html"
-                ><button class="py-1 px-3 px-sm-4 rounded-pill boton">
+                ><button class="py-1 px-2 px-sm-4 rounded-pill boton">
                   Nenas
+                </button></a
+              >
+            </li>
+
+            <li>
+              <a href="../pages/nenes.html"
+                ><button class="py-1 px-2 px-sm-4 rounded-pill boton">
+                  Nenes
                 </button></a
               >
             </li>
           </div>
 
-          <div class="col-4 col-sm-4 text-start pt-2 pt-sm-0 column-gap-5 px-5">
+          <div      data-aos="fade-right"
+          data-aos-duration="1000" class="col-4 col-sm-4 text-start pt-2 pt-sm-0 column-gap-5 px-5">
             <button
               class="navbar-toggler"
               type="button"
@@ -120,11 +134,21 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
+
             <div
               class="justify-content-center collapse navbar-collapse"
               id="navbarNav"
             >
               <ul class="d-flex flex-column navbar-nav">
+                <li>
+                  <a
+                    class="nav-link fs-6 d-md-none fw-medium text-decoration-underline"
+                    aria-current="page"
+                    href="/index.html"
+                    >Inicio</a
+                  >
+                </li>
+
                 <li class="nav-item">
                   <a
                     class="nav-link fs-6 fw-medium text-decoration-underline"
@@ -133,8 +157,13 @@
                     >Guia de talles</a
                   >
                 </li>
+
                 <li class="nav-item">
-                  <a class="nav-link fs-6 fw-medium text-decoration-underline" href="../pages/contacto.html">contacto</a>
+                  <a
+                    class="nav-link fs-6 fw-medium text-decoration-underline"
+                    href="../pages/contacto.html"
+                    >contacto</a
+                  >
                 </li>
               </ul>
             </div>
@@ -179,169 +208,262 @@
             aria-labelledby="offcanvasScrollingLabel"
           >
             <div class="dropdown mt-3 mx-5">
-              <section>
-                <div class="offcanvas-header">
-                  <h2 class="offcanvas-title" id="offcanvasScrollingLabel">
-                    Filtros
-                  </h2>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                  ></button>
+              <section class="row row-gap-3 p-3">
+                <div class="col-6 d-flex align-items-center dropdown">
+                  <div class="filtro d-flex">
+                    <button
+                      class="p-3 boton"
+                      type="button"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasScrolling"
+                      aria-controls="offcanvasScrolling"
+                    ></button>
+
+                    <div>
+                      <p class="fw-medium text-decoration-underline">Filtros</p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="offcanvas offcanvas-start"
+                    data-bs-scroll="true"
+                    data-bs-backdrop="false"
+                    tabindex="-1"
+                    id="offcanvasScrolling"
+                    aria-labelledby="offcanvasScrollingLabel"
+                  >
+                    <div class="dropdown mt-3 mx-5">
+                      <section>
+                        <div class="offcanvas-header">
+                          <h2
+                            class="offcanvas-title"
+                            id="offcanvasScrollingLabel"
+                          >
+                            Filtros
+                          </h2>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+                          <!--filtro Colores -->
+                          <div class="text-center">
+                            <h3 class="fs-4">Colores</h3>
+                          </div>
+                          <form class="d-flex justify-content-between">
+                            <div>
+                              <div>
+                                <input
+                                  type="checkbox"
+                                  name="negro"
+                                  class="negro"
+                                />
+                                <label for="negro">Negro</label>
+                              </div>
+
+                              <div>
+                                <input
+                                  type="checkbox"
+                                  name="azul"
+                                  class="azul"
+                                />
+                                <label for="azul">Azul</label>
+                              </div>
+
+                              <div>
+                                <input
+                                  type="checkbox"
+                                  name="blanco"
+                                  class="blanco"
+                                />
+                                <label for="blanco">Blanco</label>
+                              </div>
+
+                              <div>
+                                <input
+                                  type="checkbox"
+                                  name="Rosa"
+                                  class="Rosa"
+                                />
+                                <label for="Rosa">Rosa</label>
+                              </div>
+                              <div>
+                                <input
+                                  type="checkbox"
+                                  name="Verde"
+                                  class="Verde"
+                                />
+                                <label for="Verde">Verde</label>
+                              </div>
+                            </div>
+
+                            <div>
+                              <div>
+                                <input
+                                  type="checkbox"
+                                  name="red"
+                                  class="rojo"
+                                />
+                                <label for="rojo">Rojo</label>
+                              </div>
+
+                              <div>
+                                <input
+                                  type="checkbox"
+                                  name="Amarillo"
+                                  class="Amarillo"
+                                />
+                                <label for="Amarillo">Amarillo</label>
+                              </div>
+
+                              <div>
+                                <input
+                                  type="checkbox"
+                                  name="Rosa"
+                                  class="Rosa"
+                                />
+                                <label for="Rosa">Rosa</label>
+                              </div>
+
+                              <div>
+                                <input
+                                  type="checkbox"
+                                  name="Naranja"
+                                  class="Naranja"
+                                />
+                                <label for="Naranja">Naranja</label>
+                              </div>
+
+                              <div>
+                                <input
+                                  type="checkbox"
+                                  name="Marron"
+                                  class="Marron"
+                                />
+                                <label for="Marron">Marrón</label>
+                              </div>
+                            </div>
+                          </form>
+                          <!--filto de talles -->
+                          <div class="mt-3 text-center">
+                            <h3 class="fs-4">Talles</h3>
+                          </div>
+
+                          <div
+                            class="mt-2 filtroTalles d-flex justify-content-between"
+                          >
+                            <form class="filroTalles__bebes">
+                              <div>
+                                <h4 class="fs-5">Bebés</h4>
+                              </div>
+
+                              <div>
+                                <input type="checkbox" name="3" class="3" />
+                                <label for="3">3 meses</label>
+                              </div>
+
+                              <div>
+                                <input type="checkbox" name="6" class="6" />
+                                <label for="6">6 meses</label>
+                              </div>
+                              <div>
+                                <input type="checkbox" name="9" class="9" />
+                                <label for="9">9 meses</label>
+                              </div>
+                              <div>
+                                <input type="checkbox" name="12" class="12" />
+                                <label for="12">12 meses</label>
+                              </div>
+                              <div>
+                                <input type="checkbox" name="18" class="18" />
+                                <label for="18">18 meses</label>
+                              </div>
+                            </form>
+                            <!--  filtro talles ninos -->
+                            <form>
+                              <div>
+                                <h4 class="fs-5">Niños</h4>
+                              </div>
+
+                              <div>
+                                <input type="checkbox" name="t2" class="t2" />
+                                <label for="t2">Talle 2</label>
+                              </div>
+
+                              <div>
+                                <input type="checkbox" name="t4" class="t4" />
+                                <label for="t4"> Talle 4</label>
+                              </div>
+                              <div>
+                                <input type="checkbox" name="t6" class="t6" />
+                                <label for="t6">Talle 6</label>
+                              </div>
+                              <div>
+                                <input type="checkbox" name="t8" class="t8" />
+                                <label for="t8">Talle 8</label>
+                              </div>
+                              <div>
+                                <input type="checkbox" name="t10" class="t10" />
+                                <label for="t10">Talle 10</label>
+                              </div>
+                              <div>
+                                <input type="checkbox" name="t12" class="t12" />
+                                <label for="t12">Talle 12</label>
+                              </div>
+                              <div>
+                                <input type="checkbox" name="t14" class="t14" />
+                                <label for="t14">Talle 14</label>
+                              </div>
+                              <div>
+                                <input
+                                  type="checkbox"
+                                  name="t16"
+                                  class="t16N"
+                                />
+                                <label for="t16">Talle 16</label>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </section>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="offcanvas-body">
-                  <div class="text-center">
-                    <h3 class="fs-4">Colores</h3>
-                  </div>
-                  <!-- filtro para colores -->
-                  <form class="filtroColores d-flex justify-content-between">
-                    <div>
-                      <div>
-                        <input type="checkbox" name="negro" id="negro" />
-                        <label for="negro">Negro</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="azul" id="azul" />
-                        <label for="azul">Azul</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="blanco" id="blanco" />
-                        <label for="blanco">Blanco</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="Rosa" id="Rosa" />
-                        <label for="Rosa">Rosa</label>
-                      </div>
-                      <div>
-                        <input type="checkbox" name="Verde" id="Verde" />
-                        <label for="Verde">Verde</label>
-                      </div>
-                    </div>
-
-                    <div>
-                      <div>
-                        <input type="checkbox" name="red" id="rojo" />
-                        <label for="rojo">Rojo</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="Amarillo" id="Amarillo" />
-                        <label for="Amarillo">Amarillo</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="Rosa" id="Rosa" />
-                        <label for="Rosa">Rosa</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="Naranja" id="Naranja" />
-                        <label for="Naranja">Naranja</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="Marron" id="Marron" />
-                        <label for="Marron">Marrón</label>
-                      </div>
-                    </div>
-                  </form>
-
-                  <div class="mt-3 text-center">
-                    <h3 class="fs-4">Talles</h3>
-                  </div>
-                  <!-- filtro para talles -->
-                  <form
-                    class="mt-2 filtroTalles d-flex justify-content-between"
+                <div class="col-6 d-flex justify-content-end dropdown pe-5">
+                  <p class="fw-medium text-decoration-underline">Ordenar de:</p>
+                  <button
+                    class="btn btn-light dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
-                    <section class="filroTalles__bebes">
-                      <div>
-                        <h4 class="fs-5">Bebés</h4>
-                      </div>
+                    talles
+                  </button>
 
-                      <div>
-                        <input type="checkbox" name="3" id="3" />
-                        <label for="3">3 meses</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="6" id="6" />
-                        <label for="6">6 meses</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="9" id="9" />
-                        <label for="9">9 meses</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="12" id="12" />
-                        <label for="12">12 meses</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="18" id="18" />
-                        <label for="18">18 meses</label>
-                      </div>
-                    </section>
-
-                    <div class="filtroTalles__ninos">
-                      <div>
-                        <h4 class="fs-5">Niños</h4>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="t2" id="t2" />
-                        <label for="t2">Talle 2</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="t4" id="t4" />
-                        <label for="t4"> Talle 4</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="t6" id="t6" />
-                        <label for="t6">Talle 6</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="t8" id="t8" />
-                        <label for="t8">Talle 8</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="t10" id="t10" />
-                        <label for="t10">Talle 10</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="t12" id="t12" />
-                        <label for="t12">Talle 12</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="t14" id="t14" />
-                        <label for="t14">Talle 14</label>
-                      </div>
-
-                      <div>
-                        <input type="checkbox" name="t16" id="t16" />
-                        <label for="t16">Talle 16</label>
-                      </div>
-                    </div>
-                  </form>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Precio de mayor a menor</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"
+                        >Precio de menor a mayor</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">A-Z</a></li>
+                  </ul>
                 </div>
               </section>
             </div>
           </div>
         </div>
-
+        <!-- ordenar de... -->
         <div class="col-6 d-flex justify-content-end dropdown pe-5">
           <p class="fw-medium text-decoration-underline">Ordenar de:</p>
           <button
@@ -369,11 +491,13 @@
 
       <!-- card prendas -->
       <div class="row justify-content-center pb-5 row-gap-3 p-2">
+        <!-- Articulo 1 -->
         <article
           data-aos="fade-up"
           data-aos-duration="2500"
           class="card card-1 col-1 col-sm-6 col-md-3 me-2 flex-nowrap"
         >
+          <!-- carrusel -->
           <div id="carousel-uno-v" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -428,6 +552,7 @@
             </button>
           </div>
 
+          <!-- descripcion -->
           <div class="descripcion">
             <p class="card-text">Remera manga corta</p>
             <p>$6080</p>
@@ -443,18 +568,28 @@
             </select>
           </div>
 
-          <div class="colorBotones d-flex justify-content-center">
-            <button class="btn blu"></button>
-            <button class="btn black"></button>
-            <button class="btn grey"></button>
+          <!-- colores de prenda -->
+          <div class="color-botones d-flex justify-content-center">
+            <button class="blue"></button>
+            <button class="black"></button>
+            <button class="grey"></button>
+            <img
+              class="mt-1"
+              src="../assets/iconos/corazon.svg"
+              alt="likes"
+              height="28"
+              width="28"
+            />
           </div>
         </article>
 
+        <!-- Articulo 2 -->
         <article
           data-aos="fade-up"
           data-aos-duration="2500"
           class="card card-2 col-1 col-sm-6 col-md-3 me-2"
         >
+          <!-- carrusel -->
           <div id="carousel-dos-v" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -507,6 +642,8 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+
+          <!-- descripcion -->
           <div class="descripcion">
             <p class="card-text">Piloto Rayado</p>
             <p>$7400</p>
@@ -521,18 +658,29 @@
               <option value="7">14</option>
             </select>
           </div>
-          <div class="colorBotones d-flex justify-content-center">
-            <button class="btn red"></button>
-            <button class="btn blue"></button>
-            <button class="btn black"></button>
+
+          <!-- colores de prenda -->
+          <div class="color-botones d-flex justify-content-center">
+            <button class="red"></button>
+            <button class="blue"></button>
+            <button class="black"></button>
+            <img
+              class="mt-1"
+              src="../assets/iconos/corazon.svg"
+              alt="likes"
+              height="28"
+              width="28"
+            />
           </div>
         </article>
 
+        <!-- Articulo 3 -->
         <article
           data-aos="fade-up"
           data-aos-duration="2500"
           class="card card-3 col-1 col-sm-6 col-md-3 me-2"
         >
+          <!-- carrusel -->
           <div id="carousel-tres-v" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -585,6 +733,8 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+
+          <!-- descripcion -->
           <div class="descripcion">
             <p class="card-text">Poulover</p>
             <p>$8800</p>
@@ -596,19 +746,30 @@
               <option value="7">14</option>
             </select>
           </div>
-          <div class="colorBotones d-flex justify-content-center">
-            <button class="btn black"></button>
-            <button class="btn yellow"></button>
-            <button class="btn white"></button>
-            <button class="btn blue"></button>
+
+          <!-- colores de prendas -->
+          <div class="color-botones d-flex justify-content-center">
+            <button class="black"></button>
+            <button class="yellow"></button>
+            <button class="white"></button>
+            <button class="blue"></button>
+            <img
+              class="mt-1"
+              src="../assets/iconos/corazon.svg"
+              alt="likes"
+              height="28"
+              width="28"
+            />
           </div>
         </article>
 
+        <!-- Articulo 4 -->
         <article
           data-aos="fade-up"
           data-aos-duration="2500"
           class="card card-8 col-1 col-sm-4 col-md-3 me-2"
         >
+          <!-- carrusel -->
           <div id="carousel-cuatro-v" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -665,6 +826,7 @@
             </button>
           </div>
 
+          <!-- Descripcion -->
           <div class="descripcion">
             <p class="card-text">Chaleco</p>
             <p>$7980</p>
@@ -680,19 +842,29 @@
             </select>
           </div>
 
-          <div class="colorBotones d-flex justify-content-center">
-            <button class="btn green"></button>
-            <button class="btn red"></button>
-            <button class="btn grey"></button>
-            <button class="btn blue"></button>
+          <!-- colores de prenda -->
+          <div class="color-botones d-flex justify-content-center">
+            <button class="green"></button>
+            <button class="red"></button>
+            <button class="grey"></button>
+            <button class="blue"></button>
+            <img
+              class="mt-1"
+              src="../assets/iconos/corazon.svg"
+              alt="likes"
+              height="28"
+              width="28"
+            />
           </div>
         </article>
 
+        <!-- Articulo 4 -->
         <article
           data-aos="fade-up"
           data-aos-duration="2500"
           class="card card-4 col-1 col-sm-6 col-md-3 me-2"
         >
+          <!-- Carrusel -->
           <div id="carousel-cinco-v" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -745,6 +917,8 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+
+          <!-- descripcion -->
           <div class="descripcion">
             <p class="card-text">Camisa de Jean</p>
             <p>$6500</p>
@@ -759,19 +933,29 @@
               <option value="7">14</option>
             </select>
           </div>
+
+          <!-- colores de prenda -->
           <div class="colorBotones d-flex justify-content-center">
-            <button class="btn brown"></button>
-            <button class="btn black"></button>
-            <button class="btn grey"></button>
-            <button class="btn blue"></button>
+            <button class="brown"></button>
+            <button class="black"></button>
+            <button class="grey"></button>
+            <button class="blue"></button>
+            <img
+              class="mt-1"
+              src="../assets/iconos/corazon.svg"
+              alt="likes"
+              height="28"
+              width="28"
+            />
           </div>
         </article>
-
+        <!-- Articulo 5 -->
         <article
           data-aos="fade-up"
           data-aos-duration="2500"
           class="card card-5 col-1 col-sm-4 col-md-3 me-2"
         >
+          <!-- carrusel -->
           <div id="carousel-seis-v" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -829,6 +1013,7 @@
             </button>
           </div>
 
+          <!-- descripcion -->
           <div class="descripcion">
             <p class="card-text">Campera</p>
             <p>$10200</p>
@@ -842,18 +1027,28 @@
             </select>
           </div>
 
-          <div class="colorBotones d-flex justify-content-center">
-            <button class="btn red"></button>
-            <button class="btn green"></button>
-            <button class="btn black"></button>
+          <!-- colores de prenda -->
+          <div class="color-botones d-flex justify-content-center">
+            <button class="red"></button>
+            <button class="green"></button>
+            <button class="black"></button>
+            <img
+              class="mt-1"
+              src="../assets/iconos/corazon.svg"
+              alt="likes"
+              height="28"
+              width="28"
+            />
           </div>
         </article>
 
+        <!-- Articulo 7 -->
         <article
           data-aos="fade-up"
           data-aos-duration="2500"
           class="card card-6 col-1 col-sm-4 col-md-3 me-2"
         >
+          <!-- carrusel -->
           <div id="carousel-siete-v" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -909,6 +1104,7 @@
             </button>
           </div>
 
+          <!-- descripcion -->
           <div class="descripcion">
             <p class="card-text">Remera manga corta</p>
             <p>$5600</p>
@@ -924,14 +1120,23 @@
             </select>
           </div>
 
-          <div class="colorBotones d-flex justify-content-center">
-            <button class="btn white"></button>
-            <button class="btn blue"></button>
-            <button class="btn red"></button>
-            <button class="btn grey"></button>
+          <!-- color de prendas -->
+          <div class="color-botones d-flex justify-content-center">
+            <button class="white"></button>
+            <button class="blue"></button>
+            <button class="red"></button>
+            <button class="grey"></button>
+            <img
+              class="mt-1"
+              src="../assets/iconos/corazon.svg"
+              alt="likes"
+              height="28"
+              width="28"
+            />
           </div>
         </article>
 
+        <!-- articulo 8 -->
         <article
           data-aos="fade-up"
           data-aos-duration="2500"
@@ -994,6 +1199,7 @@
             </button>
           </div>
 
+          <!-- descripcion -->
           <div class="descripcion">
             <p class="card-text">Cardigan de jean</p>
             <p>$8800</p>
@@ -1006,10 +1212,11 @@
             </select>
           </div>
 
-          <div class="colorBotones d-flex justify-content-center">
-            <button class="btn grey"></button>
-            <button class="btn blue"></button>
-            <button class="btn black"></button>
+          <!-- color prenda -->
+          <div class="color-botones d-flex justify-content-center">
+            <button class="grey"></button>
+            <button class="blue"></button>
+            <button class="black"></button>
           </div>
         </article>
       </div>
@@ -1022,7 +1229,7 @@
         target="_blank"
         ><img
           class="position-fixed bottom-50 end-0 wsp__wsp"
-          src="../assets/iconos/whatsapp.svg"
+          src="../assets/iconos/whatsapp-icon-logo-svgrepo-com.svg"
           alt="wsp"
           width="48"
           height="48"

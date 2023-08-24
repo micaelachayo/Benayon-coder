@@ -20,7 +20,12 @@
     <!-- header -->
     <header class="container-fluid header">
       <div class="row">
-        <div class="col-3 d-flex justify-content-center align-items-center">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          class="col-3 d-flex justify-content-center align-items-center"
+        >
+          <!-- logo de la izq -->
           <img
             class="header-img me-1"
             src="../assets/iconos/user.svg"
@@ -45,15 +50,20 @@
           />
         </div>
 
+        <!-- titulo -->
         <div
           data-aos="fade-right"
           data-aos-duration="1000"
           class="col-7 col-md-6 text-center"
         >
-          <h1 class="display-3 pt-1 fw-bold">Dasa Girls</h1>
+          <h1 class="display-3 pt-1 fw-bold header-titulo">Dasa-girls</h1>
         </div>
 
-        <div class="col-2 col-md-3 text-center mt-4 header-containbuscador">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          class="col-2 col-md-3 text-center mt-4"
+        >
           <form class="d-flex" role="search">
             <input
               class="form-control me-2 w-50 shadow input-buscador"
@@ -63,7 +73,7 @@
             />
 
             <img
-              class="me-5 header-img"
+              class="me-5 pb-2 header-img"
               src="../assets/iconos/busqueda-de-lupa.svg"
               alt="buscador"
               width="28"
@@ -73,36 +83,55 @@
         </div>
       </div>
 
+      <!-- Navbar -->
       <div class="row">
-        <!-- nav -->
         <nav class="navbar navbar-expand-md align-items-center">
-          <div class="col-4 ps-md-3">
-            <a href="../index.html"
-              ><button class="py-1 px-3 px-sm-4 rounded-pill boton">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="col-4 ps-md-3"
+          >
+            <a class="inicio" href="../index.html"
+              ><button class="py-1 px-sm-4 rounded-pill boton">
                 Inicio
-              </button>
-            </a>
+              </button></a
+            >
           </div>
 
-          <div class="col-4 justify-content-center list-unstyled d-flex">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="col-4 justify-content-center list-unstyled d-flex"
+          >
             <li>
               <a href="../pages/bebes.html"
-                ><button class="py-1 px-3 px-sm-4 rounded-pill boton">
+                ><button class="py-1 px-2 px-sm-4 rounded-pill boton">
                   Bebés
+                </button></a
+              >
+            </li>
+            <li>
+              <a href="../pages/nenas.html"
+                ><button class="py-1 px-2 px-sm-4 rounded-pill boton">
+                  Nenas
                 </button></a
               >
             </li>
 
             <li>
               <a href="../pages/nenes.html"
-                ><button class="py-1 px-3 px-sm-4 rounded-pill boton">
+                ><button class="py-1 px-2 px-sm-4 rounded-pill boton">
                   Nenes
                 </button></a
               >
             </li>
           </div>
 
-          <div class="col-4 col-sm-4 text-start pt-2 pt-sm-0 column-gap-5 px-5">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="col-4 col-sm-4 text-start pt-2 pt-sm-0 column-gap-5 px-5"
+          >
             <button
               class="navbar-toggler"
               type="button"
@@ -120,6 +149,15 @@
               id="navbarNav"
             >
               <ul class="d-flex flex-column navbar-nav">
+                <li>
+                  <a
+                    class="nav-link fs-6 d-md-none fw-medium text-decoration-underline"
+                    aria-current="page"
+                    href="/index.html"
+                    >Inicio</a
+                  >
+                </li>
+
                 <li class="nav-item">
                   <a
                     class="nav-link fs-6 fw-medium text-decoration-underline"
@@ -128,8 +166,13 @@
                     >Guia de talles</a
                   >
                 </li>
-                <li class="nav-item fs-6 fw-medium text-decoration-underline">
-                  <a class="nav-link" href="../pages/contacto.html">contacto</a>
+
+                <li class="nav-item">
+                  <a
+                    class="nav-link fs-6 fw-medium text-decoration-underline"
+                    href="../pages/contacto.html"
+                    >contacto</a
+                  >
                 </li>
               </ul>
             </div>
@@ -138,6 +181,7 @@
       </div>
     </header>
 
+    <!-- oferta -->
     <aside>
       <div class="oferta">
         <p class="text-center fw-bold">SALE 2X1 EN TODAS LAS PRENDAS!</p>
@@ -172,12 +216,10 @@
           >
             <div class="dropdown mt-3 mx-5">
               <section>
-                <!-- menu filtro -->
                 <div class="offcanvas-header">
                   <h2 class="offcanvas-title" id="offcanvasScrollingLabel">
                     Filtros
                   </h2>
-
                   <button
                     type="button"
                     class="btn-close"
@@ -187,149 +229,142 @@
                 </div>
 
                 <div class="offcanvas-body">
+                  <!--filtro Colores -->
                   <div class="text-center">
                     <h3 class="fs-4">Colores</h3>
                   </div>
-
-                  <!-- filtro colores -->
                   <form class="d-flex justify-content-between">
                     <div>
                       <div>
-                        <input type="checkbox" name="negro" id="negro" />
+                        <input type="checkbox" name="negro" class="negro" />
                         <label for="negro">Negro</label>
                       </div>
 
                       <div>
-                        <input type="checkbox" name="azul" id="azul" />
+                        <input type="checkbox" name="azul" class="azul" />
                         <label for="azul">Azul</label>
                       </div>
 
                       <div>
-                        <input type="checkbox" name="blanco" id="blanco" />
+                        <input type="checkbox" name="blanco" class="blanco" />
                         <label for="blanco">Blanco</label>
                       </div>
 
                       <div>
-                        <input type="checkbox" name="Rosa" id="Rosa" />
+                        <input type="checkbox" name="Rosa" class="Rosa" />
                         <label for="Rosa">Rosa</label>
                       </div>
                       <div>
-                        <input type="checkbox" name="Verde" id="Verde" />
+                        <input type="checkbox" name="Verde" class="Verde" />
                         <label for="Verde">Verde</label>
                       </div>
                     </div>
 
                     <div>
                       <div>
-                        <input type="checkbox" name="red" id="rojo" />
+                        <input type="checkbox" name="red" class="rojo" />
                         <label for="rojo">Rojo</label>
                       </div>
 
                       <div>
-                        <input type="checkbox" name="Amarillo" id="Amarillo" />
+                        <input
+                          type="checkbox"
+                          name="Amarillo"
+                          class="Amarillo"
+                        />
                         <label for="Amarillo">Amarillo</label>
                       </div>
 
                       <div>
-                        <input type="checkbox" name="Rosa" id="Rosa" />
+                        <input type="checkbox" name="Rosa" class="Rosa" />
                         <label for="Rosa">Rosa</label>
                       </div>
 
                       <div>
-                        <input type="checkbox" name="Naranja" id="Naranja" />
+                        <input type="checkbox" name="Naranja" class="Naranja" />
                         <label for="Naranja">Naranja</label>
                       </div>
 
                       <div>
-                        <input type="checkbox" name="Marron" id="Marron" />
+                        <input type="checkbox" name="Marron" class="Marron" />
                         <label for="Marron">Marrón</label>
                       </div>
                     </div>
                   </form>
-
+                  <!--filto de talles -->
                   <div class="mt-3 text-center">
                     <h3 class="fs-4">Talles</h3>
                   </div>
-                  <!-- tallas bebes -->
-                  <form class="mt-2 d-flex justify-content-between">
-                    <section class="filtro-bebes">
+
+                  <div class="mt-2 filtroTalles d-flex justify-content-between">
+                    <form class="filroTalles__bebes">
                       <div>
                         <h4 class="fs-5">Bebés</h4>
                       </div>
 
                       <div>
-                        <input type="checkbox" name="3" id="3" />
+                        <input type="checkbox" name="3" class="3" />
                         <label for="3">3 meses</label>
                       </div>
 
                       <div>
-                        <input type="checkbox" name="6" id="6" />
+                        <input type="checkbox" name="6" class="6" />
                         <label for="6">6 meses</label>
                       </div>
-
                       <div>
-                        <input type="checkbox" name="9" id="9" />
+                        <input type="checkbox" name="9" class="9" />
                         <label for="9">9 meses</label>
                       </div>
-
                       <div>
-                        <input type="checkbox" name="12" id="12" />
+                        <input type="checkbox" name="12" class="12" />
                         <label for="12">12 meses</label>
                       </div>
-
                       <div>
-                        <input type="checkbox" name="18" id="18" />
+                        <input type="checkbox" name="18" class="18" />
                         <label for="18">18 meses</label>
                       </div>
-                    </section>
-
-                    <!-- tallas ninos -->
-                    <section>
+                    </form>
+                    <!--  filtro talles ninos -->
+                    <form>
                       <div>
                         <h4 class="fs-5">Niños</h4>
                       </div>
 
                       <div>
-                        <input type="checkbox" name="t2" id="t2" />
+                        <input type="checkbox" name="t2" class="t2" />
                         <label for="t2">Talle 2</label>
                       </div>
 
                       <div>
-                        <input type="checkbox" name="t4" id="t4" />
+                        <input type="checkbox" name="t4" class="t4" />
                         <label for="t4"> Talle 4</label>
                       </div>
-
                       <div>
-                        <input type="checkbox" name="t6" id="t6" />
+                        <input type="checkbox" name="t6" class="t6" />
                         <label for="t6">Talle 6</label>
                       </div>
-
                       <div>
-                        <input type="checkbox" name="t8" id="t8" />
+                        <input type="checkbox" name="t8" class="t8" />
                         <label for="t8">Talle 8</label>
                       </div>
-
                       <div>
-                        <input type="checkbox" name="t10" id="t10" />
+                        <input type="checkbox" name="t10" class="t10" />
                         <label for="t10">Talle 10</label>
                       </div>
-
                       <div>
-                        <input type="checkbox" name="t12" id="t12" />
+                        <input type="checkbox" name="t12" class="t12" />
                         <label for="t12">Talle 12</label>
                       </div>
-
                       <div>
-                        <input type="checkbox" name="t14" id="t14" />
+                        <input type="checkbox" name="t14" class="t14" />
                         <label for="t14">Talle 14</label>
                       </div>
-
                       <div>
-                        <input type="checkbox" name="t16" id="t16" />
+                        <input type="checkbox" name="t16" class="t16N" />
                         <label for="t16">Talle 16</label>
                       </div>
-                    </section>
-                  </form>
+                    </form>
+                  </div>
                 </div>
               </section>
             </div>
@@ -359,13 +394,14 @@
         </div>
       </section>
 
-      <!-- Articulos -->
       <div class="row justify-content-center pb-5 row-gap-3 p-2">
+        <!-- Articulo 1 -->
         <article
           data-aos="fade-up"
           data-aos-duration="2500"
           class="card card-1 col-1 col-sm-6 col-md-3 me-2 flex-nowrap"
         >
+          <!-- Carrusel -->
           <div id="carousel-uno-m" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -423,6 +459,7 @@
             </button>
           </div>
 
+          <!-- Descripcion -->
           <div class="descripcion">
             <p class="card-text">Pantalon</p>
             <p>$6600</p>
@@ -438,18 +475,28 @@
             </select>
           </div>
 
+          <!-- color de prenda -->
           <div class="color-botones d-flex justify-content-center">
-            <button class="btn blue"></button>
-            <button class="btn pink"></button>
-            <button class="btn black"></button>
+            <button class="blue"></button>
+            <button class="pink"></button>
+            <button class="black"></button>
+            <img
+              class="mt-1"
+              src="../assets/iconos/corazon.svg"
+              alt="likes"
+              height="28"
+              width="28"
+            />
           </div>
         </article>
 
+        <!-- Articulo 2 -->
         <article
           data-aos="fade-up"
           data-aos-duration="2500"
           class="card card-2 col-1 col-sm-6 col-md-3 me-2"
         >
+          <!-- Carrusel -->
           <div id="carousel-dos-m" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -507,6 +554,7 @@
             </button>
           </div>
 
+          <!-- Descripcion -->
           <div class="descripcion">
             <p class="card-text">Camisa Cuadriculada</p>
             <p>$5400</p>
@@ -522,18 +570,28 @@
             </select>
           </div>
 
+          <!-- colores prenda -->
           <div class="color-botones d-flex justify-content-center">
-            <button class="btn red"></button>
-            <button class="btn blue"></button>
-            <button class="btn black"></button>
+            <button class="red"></button>
+            <button class="blue"></button>
+            <button class="black"></button>
+            <img
+              class="mt-1"
+              src="../assets/iconos/corazon.svg"
+              alt="likes"
+              height="28"
+              width="28"
+            />
           </div>
         </article>
 
+        <!-- Articulo 3 -->
         <article
           data-aos="fade-up"
           data-aos-duration="2500"
           class="card card-3 col-1 col-sm-6 col-md-3 me-2"
         >
+          <!-- carrusel -->
           <div id="carousel-tres-m" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -591,6 +649,7 @@
             </button>
           </div>
 
+          <!-- descripcion -->
           <div class="descripcion">
             <p class="card-text">Conjunto buzo y falda</p>
             <p>$9200</p>
@@ -606,20 +665,30 @@
             </select>
           </div>
 
+          <!-- color de prendas -->
           <div class="color-botones d-flex justify-content-center">
-            <button class="btn pink"></button>
-            <button class="btn blue"></button>
-            <button class="btn black"></button>
-            <button class="btn yellow"></button>
-            <button class="btn brown"></button>
+            <button class="pink"></button>
+            <button class="blue"></button>
+            <button class="black"></button>
+            <button class="yellow"></button>
+            <button class="brown"></button>
+            <img
+              class="mt-1"
+              src="../assets/iconos/corazon.svg"
+              alt="likes"
+              height="28"
+              width="28"
+            />
           </div>
         </article>
 
+        <!-- Articulo 4 -->
         <article
           data-aos="fade-up"
           data-aos-duration="2500"
           class="card card-4 col-1 col-sm-6 col-md-3 me-2"
         >
+          <!-- carrusel -->
           <div id="carousel-cuatro-m" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -677,6 +746,7 @@
             </button>
           </div>
 
+          <!-- descripcion -->
           <div class="descripcion">
             <p class="card-text">Vestido</p>
             <p>$7500</p>
@@ -689,19 +759,29 @@
             </select>
           </div>
 
+          <!-- colores de prenda -->
           <div class="color-botones d-flex justify-content-center">
-            <button class="btn pink"></button>
-            <button class="btn white"></button>
-            <button class="btn black"></button>
-            <button class="btn blue"></button>
+            <button class="pink"></button>
+            <button class="white"></button>
+            <button class="black"></button>
+            <button class="blue"></button>
+            <img
+              class="mt-1"
+              src="../assets/iconos/corazon.svg"
+              alt="likes"
+              height="28"
+              width="28"
+            />
           </div>
         </article>
 
+        <!-- Articulo 5 -->
         <article
           data-aos="fade-up"
           data-aos-duration="2500"
           class="card card-5 col-1 col-sm-4 col-md-3 me-2"
         >
+          <!-- carrusel -->
           <div id="carousel-cinco-m" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -759,6 +839,7 @@
             </button>
           </div>
 
+          <!-- descripcion -->
           <div class="descripcion">
             <p class="card-text">Remera manga larga</p>
             <p>$6120</p>
@@ -771,18 +852,28 @@
             </select>
           </div>
 
+          <!-- colores de prenda -->
           <div class="color-botones d-flex justify-content-center">
-            <button class="btn white"></button>
-            <button class="btn pink"></button>
-            <button class="btn black"></button>
+            <button class="white"></button>
+            <button class="pink"></button>
+            <button class="black"></button>
+            <img
+              class="mt-1"
+              src="../assets/iconos/corazon.svg"
+              alt="likes"
+              height="28"
+              width="28"
+            />
           </div>
         </article>
 
+        <!-- Articulo 6 -->
         <article
           data-aos="fade-up"
           data-aos-duration="2500"
           class="card card-6 col-1 col-sm-4 col-md-3 me-2"
         >
+          <!-- carrusel -->
           <div id="carousel-seis-m" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -840,6 +931,7 @@
             </button>
           </div>
 
+          <!-- descripcion -->
           <div class="descripcion">
             <p class="card-text">Vestido</p>
             <p>$6600</p>
@@ -852,24 +944,32 @@
             </select>
           </div>
 
-          <div class="colorBotones d-flex justify-content-center">
-            <button class="btn blue"></button>
-            <button class="btn grey"></button>
-            <button class="btn yellow"></button>
-            <button class="btn pink"></button>
+          <!-- colores de prendas -->
+          <div class="color-botones d-flex justify-content-center">
+            <button class="blue"></button>
+            <button class="grey"></button>
+            <button class="yellow"></button>
+            <button class="pink"></button>
+            <img
+              class="mt-1"
+              src="../assets/iconos/corazon.svg"
+              alt="likes"
+              height="28"
+              width="28"
+            />
           </div>
         </article>
       </div>
     </main>
 
-    <!-- icono wsp fixed -->
+    <!--wsp flotante -->
     <aside class="wsp">
       <a
         href="https://api.whatsapp.com/send/?phone=5491130340087"
         target="_blank"
         ><img
           class="position-fixed bottom-50 end-0"
-          src="../assets/iconos/whatsapp.svg"
+          src="../assets/iconos/whatsapp-icon-logo-svgrepo-com.svg"
           alt="wsp"
           width="48"
           height="48"
@@ -890,7 +990,7 @@
           <p class="parrafo-contacto">Dasa tu tienda</p>
         </div>
 
-        <div class="col-3 d-flex footer__boxGmail">
+        <div class="col-3 d-flex">
           <a href="https://www.gmail.com" target="_blank">
             <img
               src="../assets/iconos/gmail.svg"
