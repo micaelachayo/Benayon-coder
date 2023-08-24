@@ -4,7 +4,7 @@
 
 @for $i from 1 through 8 {
   .card-#{$i} {
-    width: $card-width*2;
+    width: $card-width * 2;
     @include filter;
 
     img {
@@ -19,10 +19,8 @@
     padding: 0.7rem;
     border-radius: 100%;
     margin: 5px;
-    &:hover{
+    &:hover {
       background: $estampados;
     }
-    }
-   
   }
-
+}
