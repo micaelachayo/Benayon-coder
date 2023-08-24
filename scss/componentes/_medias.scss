@@ -2,8 +2,8 @@
 @import "../global/mixin";
 @import "../global/mapas";
 
-@media (min-width: 360px) and (max-width: 705px) {
-  @include media("360-705");
+@media (min-width: 360px) and (max-width: 767px) {
+  @include media("360-767");
 
   .parrafo-contacto {
     display: none;
@@ -14,14 +14,11 @@
   .inicio {
     display: none;
   }
-  
-}
-
-@media (max-width: 767px) {
   .cuerpo-humano {
     display: none;
   }
 }
+
 
 @media (min-width: 992px) and (max-width: 1200px) {
   @include media("992-1200");
