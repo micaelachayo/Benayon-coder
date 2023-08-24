@@ -16,7 +16,13 @@
 @each $color, $valor in $boton-card {
   .#{$color} {
     background-color: $valor;
-    padding: 1rem;
+    padding: 0.7rem;
     border-radius: 100%;
+    margin: 5px;
+    &:hover{
+      background: $estampados;
+    }
+    }
+   
   }
-}
+

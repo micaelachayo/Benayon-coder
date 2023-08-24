@@ -28,7 +28,7 @@
         <div
           data-aos="fade-right"
           data-aos-duration="1000"
-          class="col-3 d-flex justify-content-center align-items-center header__contenedorIconos"
+          class="col-3 d-flex justify-content-center align-items-center "
         >
           <img
             class="header-img me-1"
@@ -57,10 +57,10 @@
         <div
           data-aos="fade-right"
           data-aos-duration="1000"
-          class="col-7 col-md-6 text-center header__contenedorTitulo"
+          class="col-7 col-md-6 text-center "
         >
           <h1
-            class="display-5 me-xxl-5 fw-bold header__contenedorTitulo__titulo"
+            class="display-5 me-xxl-5 pt-3 fw-bold "
           >
             Contacto
           </h1>
@@ -69,7 +69,7 @@
         <div
           data-aos="fade-right"
           data-aos-duration="1000"
-          class="col-2 col-md-3 text-end mt-4 header__containerbuscador"
+          class="col-2 col-md-3 text-end mt-4 "
         >
           <form class="d-flex" role="search">
             <input
@@ -91,37 +91,43 @@
 
       <div class="row">
         <!-- nav -->
-        <nav class="navbar navbar-expand-md">
-
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            class="col-12 col-sm-9 col-md-8 col-xxl-7 ulNav"
-          >
-            <ul
-              class="ms-sm-5 me-lg-4 d-flex justify-content-center justify-content-sm-end list-unstyled"
+        <nav class="navbar navbar-expand-md align-items-center">
+          <div class="col-3 col-md-4 ps-md-3">
+            <a class="inicio" href="../index.html"
+              ><button class="py-1 px-3 px-sm-4 rounded-pill boton">
+                Inicio
+              </button></a
             >
-              <li class="nav_uno">
-                <a class="bebes" href="../pages/bebes.html"
-                  ><button class="py-1 px-4 botonLink boton">Bebés</button>
-                </a>
-              </li>
-
-              <li class="nav_uno">
-                <a class="nav-linkUno" href="../pages/nenas.html">
-                  <button class="ms-1 py-1 px-4 botonLink boton">Nenas</button>
-                </a>
-              </li>
-
-              <li class="me-lg-4 nav_uno">
-                <a class="nenes" href="../pages/nenes.html">
-                  <button class="ms-1 py-1 px-4 boton">Nenes</button>
-                </a>
-              </li>
-            </ul>
           </div>
 
-          <div class="col-12 col-sm-3 col-md-4 col-xxl-5  column-gap-5 px-5">
+          <div class="col-5 col-md-4 justify-content-center  list-unstyled d-flex">
+            <li>
+              <a href="../pages/bebes.html"
+                ><button class="py-1 px-3 px-sm-4 rounded-pill boton">
+                  Bebés
+                </button></a
+              >
+            </li>
+
+            <li>
+              <a href="../pages/nenas.html"
+                ><button class="py-1 px-3 px-sm-4 rounded-pill boton">
+                  Nenas
+                </button></a
+              >
+            </li>
+
+            <li>
+              <a href="../pages/nenes.html"
+                ><button class="py-1 px-3 px-sm-4 rounded-pill boton">
+                  Nenes
+                </button></a
+              >
+            </li>
+          </div>
+
+          <!-- desplegable -->
+          <div class="col-4 col-md-4 text-start pt-2 pt-sm-0 column-gap-5 px-5">
             <button
               class="navbar-toggler"
               type="button"
@@ -135,20 +141,32 @@
             </button>
 
             <div
-              data-aos="fade-right"
-              data-aos-duration="1000"
               class="justify-content-center collapse navbar-collapse"
               id="navbarNav"
             >
               <ul class="d-flex flex-column navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link fs-6 fw-medium text-decoration-underline" aria-current="page" href="../index.html"
+                  <a
+                    class="nav-link d-md-none fs-6 fw-medium text-decoration-underline"
+                    aria-current="page"
+                    href="../index.html"
                     >Inicio</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-6 fw-medium text-decoration-underline" href="../pages/talles.html"
+                  <a
+                    class="nav-link fs-6 fw-medium text-decoration-underline"
+                    aria-current="page"
+                    href="../pages/talles.html"
                     >Guia de talles</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a
+                    class="nav-link fs-6 fw-medium text-decoration-underline"
+                    href="../pages/contacto.html"
+                    >contacto</a
                   >
                 </li>
               </ul>
@@ -275,7 +293,7 @@
         </div>
 
         <div class="col-3 d-flex footer__boxGmail">
-          <a href="https:/www.gmail.com" target="_blank">
+          <a href="https://www.gmail.com" target="_blank">
             <img
               src="../assets/iconos/gmail.svg"
               alt="gmail"
@@ -286,7 +304,7 @@
         </div>
 
         <div class="col-3 d-flex">
-          <a href="https:/www.instagram.com" target="_blank">
+          <a href="https://www.instagram.com" target="_blank">
             <img
               src="../assets/iconos/instagram.svg"
               alt="dasaMail"

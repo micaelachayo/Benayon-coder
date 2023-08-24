@@ -192,62 +192,102 @@ main h4 {
 
 .blue {
   background-color: rgb(0, 140, 255);
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 100%;
+  margin: 5px;
+}
+.blue:hover {
+  background: linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px) 64px 64px, linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px, transparent 91px, rgba(221, 199, 205, 0.918) 91px, rgba(221, 199, 205, 0.918) 135px, transparent 135px), linear-gradient(-45deg, rgb(164, 200, 206) 23px, transparent 23px, transparent 68px, rgb(164, 200, 206) 68px, rgb(164, 200, 206) 113px, transparent 113px, transparent 158px, rgb(164, 200, 206) 158px);
 }
 
 .white {
   background-color: rgb(243, 226, 203);
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 100%;
+  margin: 5px;
+}
+.white:hover {
+  background: linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px) 64px 64px, linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px, transparent 91px, rgba(221, 199, 205, 0.918) 91px, rgba(221, 199, 205, 0.918) 135px, transparent 135px), linear-gradient(-45deg, rgb(164, 200, 206) 23px, transparent 23px, transparent 68px, rgb(164, 200, 206) 68px, rgb(164, 200, 206) 113px, transparent 113px, transparent 158px, rgb(164, 200, 206) 158px);
 }
 
 .red {
   background-color: red;
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 100%;
+  margin: 5px;
+}
+.red:hover {
+  background: linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px) 64px 64px, linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px, transparent 91px, rgba(221, 199, 205, 0.918) 91px, rgba(221, 199, 205, 0.918) 135px, transparent 135px), linear-gradient(-45deg, rgb(164, 200, 206) 23px, transparent 23px, transparent 68px, rgb(164, 200, 206) 68px, rgb(164, 200, 206) 113px, transparent 113px, transparent 158px, rgb(164, 200, 206) 158px);
 }
 
 .pink {
   background-color: pink;
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 100%;
+  margin: 5px;
+}
+.pink:hover {
+  background: linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px) 64px 64px, linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px, transparent 91px, rgba(221, 199, 205, 0.918) 91px, rgba(221, 199, 205, 0.918) 135px, transparent 135px), linear-gradient(-45deg, rgb(164, 200, 206) 23px, transparent 23px, transparent 68px, rgb(164, 200, 206) 68px, rgb(164, 200, 206) 113px, transparent 113px, transparent 158px, rgb(164, 200, 206) 158px);
 }
 
 .yellow {
   background-color: yellow;
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 100%;
+  margin: 5px;
+}
+.yellow:hover {
+  background: linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px) 64px 64px, linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px, transparent 91px, rgba(221, 199, 205, 0.918) 91px, rgba(221, 199, 205, 0.918) 135px, transparent 135px), linear-gradient(-45deg, rgb(164, 200, 206) 23px, transparent 23px, transparent 68px, rgb(164, 200, 206) 68px, rgb(164, 200, 206) 113px, transparent 113px, transparent 158px, rgb(164, 200, 206) 158px);
 }
 
 .black {
   background-color: rgba(31, 29, 29, 0.925);
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 100%;
+  margin: 5px;
+}
+.black:hover {
+  background: linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px) 64px 64px, linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px, transparent 91px, rgba(221, 199, 205, 0.918) 91px, rgba(221, 199, 205, 0.918) 135px, transparent 135px), linear-gradient(-45deg, rgb(164, 200, 206) 23px, transparent 23px, transparent 68px, rgb(164, 200, 206) 68px, rgb(164, 200, 206) 113px, transparent 113px, transparent 158px, rgb(164, 200, 206) 158px);
 }
 
 .orange {
   background-color: orange;
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 100%;
+  margin: 5px;
+}
+.orange:hover {
+  background: linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px) 64px 64px, linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px, transparent 91px, rgba(221, 199, 205, 0.918) 91px, rgba(221, 199, 205, 0.918) 135px, transparent 135px), linear-gradient(-45deg, rgb(164, 200, 206) 23px, transparent 23px, transparent 68px, rgb(164, 200, 206) 68px, rgb(164, 200, 206) 113px, transparent 113px, transparent 158px, rgb(164, 200, 206) 158px);
 }
 
 .green {
   background-color: green;
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 100%;
+  margin: 5px;
+}
+.green:hover {
+  background: linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px) 64px 64px, linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px, transparent 91px, rgba(221, 199, 205, 0.918) 91px, rgba(221, 199, 205, 0.918) 135px, transparent 135px), linear-gradient(-45deg, rgb(164, 200, 206) 23px, transparent 23px, transparent 68px, rgb(164, 200, 206) 68px, rgb(164, 200, 206) 113px, transparent 113px, transparent 158px, rgb(164, 200, 206) 158px);
 }
 
 .brown {
   background-color: brown;
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 100%;
+  margin: 5px;
+}
+.brown:hover {
+  background: linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px) 64px 64px, linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px, transparent 91px, rgba(221, 199, 205, 0.918) 91px, rgba(221, 199, 205, 0.918) 135px, transparent 135px), linear-gradient(-45deg, rgb(164, 200, 206) 23px, transparent 23px, transparent 68px, rgb(164, 200, 206) 68px, rgb(164, 200, 206) 113px, transparent 113px, transparent 158px, rgb(164, 200, 206) 158px);
 }
 
 .grey {
   background-color: grey;
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 100%;
+  margin: 5px;
+}
+.grey:hover {
+  background: linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px) 64px 64px, linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px, transparent 91px, rgba(221, 199, 205, 0.918) 91px, rgba(221, 199, 205, 0.918) 135px, transparent 135px), linear-gradient(-45deg, rgb(164, 200, 206) 23px, transparent 23px, transparent 68px, rgb(164, 200, 206) 68px, rgb(164, 200, 206) 113px, transparent 113px, transparent 158px, rgb(164, 200, 206) 158px);
 }
 
 footer {
@@ -273,6 +313,9 @@ footer img:hover {
     display: none;
   }
   .input-buscador {
+    display: none;
+  }
+  .inicio {
     display: none;
   }
 }
