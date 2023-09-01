@@ -1,11 +1,14 @@
 @import "../global/variables";
 
+// animacion oferta
 .oferta {
   background: $estampados;
   background-color: rgb(240, 243, 228);
   background-size: 128px 128px;
+  height: 22px;
 
   p {
+ 
     animation-duration: 10s;
     animation-name: slidein;
     animation-timing-function: ease-in;
@@ -28,3 +31,12 @@
     width: 50%;
   }
 }
+
+// íconos de como compro
+.animate__flip{
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-delay: 3s;
+    
+  }
+

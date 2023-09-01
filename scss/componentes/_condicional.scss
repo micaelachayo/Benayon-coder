@@ -1,9 +1,0 @@
-$label: "telefono";
-$label1: "mail";
-
-@if $label == "telefono"{
-    .mail{
-        display: none;
-    }
-}
-

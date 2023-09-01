@@ -1,15 +1,10 @@
+@import "../global/variables";
 @import "../global/mapas";
 @import "../global/mixin";
 
+
 main {
   background-color: map-get($color-paleta, "main");
-
-  .boton {
-    background-color: map-get($color-paleta, "nav");
-    &:hover {
-      background-color: map-get($color-paleta, "hover");
-    }
-  }
 
   .card-principal {
     @include imagenes(0.9);
@@ -20,15 +15,17 @@ main {
   .filtro {
     button {
       @include filter;
+      background-color: map-get($color-paleta, "nav");
       &:hover {
         transform: rotate(12deg);
       }
     }
   }
   h2 {
-    color: $color-h;
+    color: map-get($color-paleta, "titulo");
   }
   h4 {
-    color: $color-h;
+    color: map-get($color-paleta, "titulo");
   }
+ 
 }

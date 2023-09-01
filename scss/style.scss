@@ -3,21 +3,22 @@
   src: url(../fonts/StaytrueDemo-Italic.otf);
 }
 //   header
-@import "./componentes/header";
+@import "./layout/header";
 
 // animaciones
 @import "./animaciones/animaciones";
 
 // main
-@import "./componentes/main";
+@import "./layout/main";
 
 // Card de prendas
 @import "./componentes/cardArticle";
 
+// error 404
+@import "./layout/404.scss";
+
 // footer
-@import "./componentes/footer";
+@import "./layout/footer";
 
 // media query
-@import "./componentes/medias";
-
-
+@import "./layout/medias";

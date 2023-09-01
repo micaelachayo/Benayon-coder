@@ -12,6 +12,11 @@ header div h1 {
   font-family: stayTrueDemo;
   filter: drop-shadow(1px 1px 1px gray);
 }
+header div h1:hover {
+  background: linear-gradient(to top, rgba(221, 199, 205, 0.918) 40%, rgb(192, 46, 41));
+  -webkit-background-clip: text;
+  color: transparent;
+}
 header .header-img {
   filter: drop-shadow(1px 1px 1px gray);
 }
@@ -19,11 +24,12 @@ header .header-img {
 nav {
   background-color: rgb(164, 200, 206);
 }
-nav li .bebes button {
-  border-top-left-radius: 90px;
+nav li .despliegue .dropdown-menu {
+  background: rgb(164, 200, 206);
 }
-nav li .nenes button {
-  border-top-right-radius: 90px;
+nav li .despliegue .dropdown-menu .dropdown-item:hover {
+  color: rgb(114, 156, 163);
+  font-size: large;
 }
 nav .boton {
   background-color: rgb(164, 200, 206);
@@ -33,13 +39,14 @@ nav .boton:hover {
   background: linear-gradient(to bottom, rgb(79, 159, 173) 40%, rgb(215, 249, 250));
 }
 nav .nav-link:hover {
-  color: rgb(44, 44, 141);
+  color: rgb(114, 156, 163);
 }
 
 .oferta {
   background: linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px) 64px 64px, linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px, transparent 91px, rgba(221, 199, 205, 0.918) 91px, rgba(221, 199, 205, 0.918) 135px, transparent 135px), linear-gradient(-45deg, rgb(164, 200, 206) 23px, transparent 23px, transparent 68px, rgb(164, 200, 206) 68px, rgb(164, 200, 206) 113px, transparent 113px, transparent 158px, rgb(164, 200, 206) 158px);
   background-color: rgb(240, 243, 228);
   background-size: 128px 128px;
+  height: 22px;
 }
 .oferta p {
   animation-duration: 10s;
@@ -62,14 +69,14 @@ nav .nav-link:hover {
     width: 50%;
   }
 }
+.animate__flip {
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-delay: 3s;
+}
+
 main {
   background-color: rgb(243, 237, 237);
-}
-main .boton {
-  background-color: rgb(164, 200, 206);
-}
-main .boton:hover {
-  background-color: rgb(173, 195, 201);
 }
 main .card-principal {
   transition: 1s;
@@ -83,15 +90,16 @@ main .card-principal .img-principal {
 }
 main .filtro button {
   filter: drop-shadow(1px 1px 1px gray);
+  background-color: rgb(164, 200, 206);
 }
 main .filtro button:hover {
   transform: rotate(12deg);
 }
 main h2 {
-  color: rgb(120, 120, 224);
+  color: rgb(79, 159, 173);
 }
 main h4 {
-  color: rgb(120, 120, 224);
+  color: rgb(79, 159, 173);
 }
 
 .card-1 {
@@ -290,6 +298,28 @@ main h4 {
   background: linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px) 64px 64px, linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px, transparent 91px, rgba(221, 199, 205, 0.918) 91px, rgba(221, 199, 205, 0.918) 135px, transparent 135px), linear-gradient(-45deg, rgb(164, 200, 206) 23px, transparent 23px, transparent 68px, rgb(164, 200, 206) 68px, rgb(164, 200, 206) 113px, transparent 113px, transparent 158px, rgb(164, 200, 206) 158px);
 }
 
+.error h2:hover {
+  color: rgb(218, 96, 96);
+}
+.error .animate__rollIn {
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+.parrafo-error {
+  color: blue;
+}
+.parrafo-error:hover {
+  color: rgb(218, 96, 96);
+}
+
+.animate__swing {
+  animation-duration: 2;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
 footer {
   background-color: rgba(221, 199, 205, 0.918);
 }
@@ -299,10 +329,10 @@ footer img {
   filter: drop-shadow(1px 1px 1px gray);
 }
 footer img:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
-@media (min-width: 360px) and (max-width: 705px) {
+@media (min-width: 360px) and (max-width: 767px) {
   .img-principal {
     width: 22.5rem;
   }
@@ -318,10 +348,12 @@ footer img:hover {
   .inicio {
     display: none;
   }
-}
-@media (max-width: 767px) {
   .cuerpo-humano {
     display: none;
+  }
+  .img-error {
+    height: 200px;
+    width: 300px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
