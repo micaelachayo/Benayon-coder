@@ -5,7 +5,7 @@
   background: $estampados;
   background-color: rgb(240, 243, 228);
   background-size: 128px 128px;
-height: 1.4rem;
+  height: 1.4rem;
 
   p {
     animation-duration: 10s;
@@ -32,10 +32,8 @@ height: 1.4rem;
 }
 
 // íconos de como compro
-.animate__flip{
-    animation-duration: 5s;
-    animation-iteration-count: 2;
-    animation-delay: 3s;
-    
-  }
-
+.animate__flip {
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-delay: 3s;
+}
