@@ -2,10 +2,10 @@
 @import "../global/mapas";
 @import "../global/mixin";
 
-
 main {
   background-color: map-get($color-paleta, "main");
 
+  // index card
   .card-principal {
     @include imagenes(0.9);
     .img-principal {
@@ -27,5 +27,4 @@ main {
   h4 {
     color: map-get($color-paleta, "titulo");
   }
- 
 }

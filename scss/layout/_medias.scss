@@ -4,7 +4,6 @@
 
 @media (min-width: 360px) and (max-width: 767px) {
   @include media("360-767");
-
   .parrafo-contacto {
     display: none;
   }
@@ -17,18 +16,17 @@
   .cuerpo-humano {
     display: none;
   }
-  .img-error{
+  .img-error {
     height: 200px;
     width: 300px;
   }
-  .oferta{
+  .oferta {
     height: 1.9rem;
-    p{
- font-size:12px;
+    p {
+      font-size: 11.5px;
     }
   }
 }
-
 
 @media (min-width: 992px) and (max-width: 1200px) {
   @include media("992-1200");

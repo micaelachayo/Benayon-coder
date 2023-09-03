@@ -1,4 +1,5 @@
 @import "../global/variables";
+@import "../global/mixin";
 
 // animacion oferta
 .oferta {
@@ -8,10 +9,9 @@
   height: 1.4rem;
 
   p {
-    animation-duration: 10s;
+  @include animaciones (10s, infinite, 0);
     animation-name: slidein;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
+    animation-timing-function: ease-in; 
     animation-direction: alternate;
     animation-fill-mode: both;
     color: $oferta-color;
@@ -33,7 +33,5 @@
 
 // íconos de como compro
 .animate__flip {
-  animation-duration: 5s;
-  animation-iteration-count: 2;
-  animation-delay: 3s;
+  @include animaciones (5s, 2, 3s);
 }

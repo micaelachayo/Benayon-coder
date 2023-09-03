@@ -20,6 +20,7 @@ header {
       }
     }
   }
+  // iconos
   .header-img {
     @include filter;
   }
@@ -46,11 +47,6 @@ nav {
     @include filter;
     &:hover {
       background: $bg-gradiante;
-    }
-  }
-  .nav-link {
-    &:hover {
-      color: map-get($color-paleta, "hover");
     }
   }
 }

@@ -38,9 +38,6 @@ nav .boton {
 nav .boton:hover {
   background: linear-gradient(to bottom, rgb(79, 159, 173) 40%, rgb(215, 249, 250));
 }
-nav .nav-link:hover {
-  color: rgb(114, 156, 163);
-}
 
 .oferta {
   background: linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px) 64px 64px, linear-gradient(45deg, rgb(164, 200, 206), 45px, transparent 45px, transparent 91px, rgba(221, 199, 205, 0.918) 91px, rgba(221, 199, 205, 0.918) 135px, transparent 135px), linear-gradient(-45deg, rgb(164, 200, 206) 23px, transparent 23px, transparent 68px, rgb(164, 200, 206) 68px, rgb(164, 200, 206) 113px, transparent 113px, transparent 158px, rgb(164, 200, 206) 158px);
@@ -50,9 +47,10 @@ nav .nav-link:hover {
 }
 .oferta p {
   animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 0;
   animation-name: slidein;
   animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-fill-mode: both;
   color: rgb(190, 7, 7);
@@ -316,8 +314,8 @@ main h4 {
 
 .animate__swing {
   animation-duration: 2;
-  animation-delay: 2s;
   animation-iteration-count: infinite;
+  animation-delay: 2s;
 }
 
 footer {
@@ -359,7 +357,7 @@ footer img:hover {
     height: 1.9rem;
   }
   .oferta p {
-    font-size: 12px;
+    font-size: 11.5px;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {

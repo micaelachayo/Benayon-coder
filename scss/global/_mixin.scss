@@ -20,6 +20,12 @@
   }
 }
 
-@mixin filter{
+@mixin filter {
   filter: drop-shadow(1px 1px 1px gray);
+}
+
+@mixin animaciones($duration, $count, $delay) {
+  animation-duration: $duration;
+  animation-iteration-count: $count;
+  animation-delay: $delay;
 }

@@ -1,0 +1,23 @@
+@import "../global/mixin";
+.error {
+  h2 {
+    &:hover {
+      color: rgb(218, 96, 96);
+    }
+  }
+  // animación 404
+  .animate__rollIn {
+   @include animaciones( 5s, 1, 1s);
+  }
+}
+
+.parrafo-error {
+  color: blue;
+  &:hover {
+    color: rgb(218, 96, 96);
+  }
+}
+
+.animate__swing {
+  @include animaciones (2, infinite,2s);
+}
